@@ -11,7 +11,7 @@ const showOnlyForProduct = {
 };
 exports.productDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -20,10 +20,10 @@ exports.productDescription = [
         },
         options: [
             {
-                name: 'Create',
+                name: 'Criar',
                 value: 'create',
-                action: 'Create a product',
-                description: 'Create a new product',
+                action: 'Criar um produto',
+                description: 'Criar um novo produto',
                 routing: {
                     request: {
                         method: 'POST',
@@ -32,10 +32,10 @@ exports.productDescription = [
                 },
             },
             {
-                name: 'Delete',
+                name: 'Excluir',
                 value: 'delete',
-                action: 'Delete a product',
-                description: 'Delete a product',
+                action: 'Excluir um produto',
+                description: 'Excluir um produto',
                 routing: {
                     request: {
                         method: 'DELETE',
@@ -44,10 +44,10 @@ exports.productDescription = [
                 },
             },
             {
-                name: 'Get',
+                name: 'Buscar',
                 value: 'get',
-                action: 'Get a product',
-                description: 'Get a single product by ID',
+                action: 'Buscar um produto',
+                description: 'Buscar um único produto pelo ID',
                 routing: {
                     request: {
                         method: 'GET',
@@ -56,10 +56,10 @@ exports.productDescription = [
                 },
             },
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get many products',
-                description: 'Get a list of products',
+                action: 'Listar produtos',
+                description: 'Obter uma lista de produtos',
                 routing: {
                     request: {
                         method: 'GET',
@@ -68,10 +68,10 @@ exports.productDescription = [
                 },
             },
             {
-                name: 'Update',
+                name: 'Atualizar',
                 value: 'update',
-                action: 'Update a product',
-                description: 'Update an existing product',
+                action: 'Atualizar um produto',
+                description: 'Atualizar um produto existente',
                 routing: {
                     request: {
                         method: 'PUT',

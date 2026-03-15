@@ -11,7 +11,7 @@ const showOnlyForProposal = {
 };
 exports.proposalDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -20,10 +20,10 @@ exports.proposalDescription = [
         },
         options: [
             {
-                name: 'Create',
+                name: 'Criar',
                 value: 'create',
-                action: 'Create a proposal',
-                description: 'Create a new proposal',
+                action: 'Criar uma proposta',
+                description: 'Criar uma nova proposta',
                 routing: {
                     request: {
                         method: 'POST',
@@ -32,10 +32,10 @@ exports.proposalDescription = [
                 },
             },
             {
-                name: 'Delete',
+                name: 'Excluir',
                 value: 'delete',
-                action: 'Delete a proposal',
-                description: 'Delete a proposal',
+                action: 'Excluir uma proposta',
+                description: 'Excluir uma proposta',
                 routing: {
                     request: {
                         method: 'DELETE',
@@ -44,10 +44,10 @@ exports.proposalDescription = [
                 },
             },
             {
-                name: 'Get',
+                name: 'Buscar',
                 value: 'get',
-                action: 'Get a proposal',
-                description: 'Get a single proposal by ID',
+                action: 'Buscar uma proposta',
+                description: 'Buscar uma única proposta pelo ID',
                 routing: {
                     request: {
                         method: 'GET',
@@ -56,10 +56,10 @@ exports.proposalDescription = [
                 },
             },
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get many proposals',
-                description: 'Get a list of proposals',
+                action: 'Listar propostas',
+                description: 'Obter uma lista de propostas',
                 routing: {
                     request: {
                         method: 'GET',
@@ -68,10 +68,10 @@ exports.proposalDescription = [
                 },
             },
             {
-                name: 'Update',
+                name: 'Atualizar',
                 value: 'update',
-                action: 'Update a proposal',
-                description: 'Update an existing proposal',
+                action: 'Atualizar uma proposta',
+                description: 'Atualizar uma proposta existente',
                 routing: {
                     request: {
                         method: 'PUT',

@@ -13,7 +13,7 @@ const showOnlyForInvoice = {
 
 export const invoiceDescription: INodeProperties[] = [
 	{
-		displayName: 'Operation',
+		displayName: 'Operação',
 		name: 'operation',
 		type: 'options',
 		noDataExpression: true,
@@ -22,10 +22,10 @@ export const invoiceDescription: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Create',
+				name: 'Criar',
 				value: 'create',
-				action: 'Create an invoice',
-				description: 'Create a new invoice',
+				action: 'Criar uma fatura',
+				description: 'Criar uma nova fatura',
 				routing: {
 					request: {
 						method: 'POST',
@@ -34,10 +34,10 @@ export const invoiceDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Delete',
+				name: 'Excluir',
 				value: 'delete',
-				action: 'Delete an invoice',
-				description: 'Delete an invoice',
+				action: 'Excluir uma fatura',
+				description: 'Excluir uma fatura',
 				routing: {
 					request: {
 						method: 'DELETE',
@@ -46,10 +46,10 @@ export const invoiceDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get',
+				name: 'Buscar',
 				value: 'get',
-				action: 'Get an invoice',
-				description: 'Get a single invoice by ID',
+				action: 'Buscar uma fatura',
+				description: 'Buscar uma única fatura pelo ID',
 				routing: {
 					request: {
 						method: 'GET',
@@ -58,10 +58,10 @@ export const invoiceDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Many',
+				name: 'Listar',
 				value: 'getMany',
-				action: 'Get many invoices',
-				description: 'Get a list of invoices',
+				action: 'Listar faturas',
+				description: 'Obter uma lista de faturas',
 				routing: {
 					request: {
 						method: 'GET',
@@ -70,10 +70,10 @@ export const invoiceDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Payments',
+				name: 'Buscar Pagamentos',
 				value: 'getPayments',
-				action: 'Get invoice payments',
-				description: 'Get payments for an invoice',
+				action: 'Buscar pagamentos da fatura',
+				description: 'Buscar todos os pagamentos de uma fatura',
 				routing: {
 					request: {
 						method: 'GET',
@@ -82,10 +82,10 @@ export const invoiceDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Record Payment',
+				name: 'Registrar Pagamento',
 				value: 'recordPayment',
-				action: 'Record a payment',
-				description: 'Record a payment for an invoice',
+				action: 'Registrar um pagamento',
+				description: 'Registrar um pagamento manual para uma fatura',
 				routing: {
 					request: {
 						method: 'POST',
@@ -94,10 +94,10 @@ export const invoiceDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Update',
+				name: 'Atualizar',
 				value: 'update',
-				action: 'Update an invoice',
-				description: 'Update an existing invoice',
+				action: 'Atualizar uma fatura',
+				description: 'Atualizar uma fatura existente',
 				routing: {
 					request: {
 						method: 'PUT',

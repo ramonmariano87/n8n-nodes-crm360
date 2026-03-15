@@ -16,7 +16,7 @@ export class Crm360 implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Interact with the CRM 360 API',
+		description: 'Interaja com a API do CRM 360',
 		defaults: {
 			name: 'CRM 360',
 		},
@@ -44,31 +44,31 @@ export class Crm360 implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'Contact',
-						value: 'contact',
-					},
-					{
-						name: 'Conversation',
-						value: 'conversation',
-					},
-					{
-						name: 'Message',
-						value: 'message',
-					},
-					{
-						name: 'Appointment',
+						name: 'Agendamento',
 						value: 'appointment',
 					},
 					{
-						name: 'Invoice',
+						name: 'Contato',
+						value: 'contact',
+					},
+					{
+						name: 'Conversa',
+						value: 'conversation',
+					},
+					{
+						name: 'Fatura',
 						value: 'invoice',
 					},
 					{
-						name: 'Product',
+						name: 'Mensagem',
+						value: 'message',
+					},
+					{
+						name: 'Produto',
 						value: 'product',
 					},
 					{
-						name: 'Proposal',
+						name: 'Proposta',
 						value: 'proposal',
 					},
 					{

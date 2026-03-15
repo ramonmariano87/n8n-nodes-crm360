@@ -11,7 +11,7 @@ const showOnlyForAppointment = {
 };
 exports.appointmentDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -20,10 +20,10 @@ exports.appointmentDescription = [
         },
         options: [
             {
-                name: 'Create',
+                name: 'Criar',
                 value: 'create',
-                action: 'Create an appointment',
-                description: 'Create a new appointment',
+                action: 'Criar um agendamento',
+                description: 'Criar um novo agendamento',
                 routing: {
                     request: {
                         method: 'POST',
@@ -32,10 +32,10 @@ exports.appointmentDescription = [
                 },
             },
             {
-                name: 'Delete',
+                name: 'Excluir',
                 value: 'delete',
-                action: 'Delete an appointment',
-                description: 'Delete an appointment',
+                action: 'Excluir um agendamento',
+                description: 'Excluir um agendamento',
                 routing: {
                     request: {
                         method: 'DELETE',
@@ -44,10 +44,10 @@ exports.appointmentDescription = [
                 },
             },
             {
-                name: 'Get',
+                name: 'Buscar',
                 value: 'get',
-                action: 'Get an appointment',
-                description: 'Get a single appointment by ID',
+                action: 'Buscar um agendamento',
+                description: 'Buscar um único agendamento pelo ID',
                 routing: {
                     request: {
                         method: 'GET',
@@ -56,10 +56,10 @@ exports.appointmentDescription = [
                 },
             },
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get many appointments',
-                description: 'Get a list of appointments',
+                action: 'Listar agendamentos',
+                description: 'Obter uma lista de agendamentos',
                 routing: {
                     request: {
                         method: 'GET',
@@ -68,10 +68,10 @@ exports.appointmentDescription = [
                 },
             },
             {
-                name: 'Update',
+                name: 'Atualizar',
                 value: 'update',
-                action: 'Update an appointment',
-                description: 'Update an existing appointment',
+                action: 'Atualizar um agendamento',
+                description: 'Atualizar um agendamento existente',
                 routing: {
                     request: {
                         method: 'PUT',

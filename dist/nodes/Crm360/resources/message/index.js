@@ -9,7 +9,7 @@ const showOnlyForMessage = {
 };
 exports.messageDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -18,10 +18,10 @@ exports.messageDescription = [
         },
         options: [
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get messages from a conversation',
-                description: 'Get messages from a conversation',
+                action: 'Listar mensagens de uma conversa',
+                description: 'Obter mensagens de uma conversa',
                 routing: {
                     request: {
                         method: 'GET',
@@ -30,10 +30,10 @@ exports.messageDescription = [
                 },
             },
             {
-                name: 'Send',
+                name: 'Enviar',
                 value: 'send',
-                action: 'Send a message in a conversation',
-                description: 'Send a text or media message in an existing conversation',
+                action: 'Enviar mensagem em uma conversa',
+                description: 'Enviar uma mensagem de texto ou mídia em uma conversa existente',
                 routing: {
                     request: {
                         method: 'POST',
@@ -42,10 +42,10 @@ exports.messageDescription = [
                 },
             },
             {
-                name: 'Send by Phone',
+                name: 'Enviar por Telefone',
                 value: 'sendByPhone',
-                action: 'Send a message by phone number',
-                description: 'Send a message to a phone number (creates conversation if needed)',
+                action: 'Enviar mensagem por número de telefone',
+                description: 'Enviar mensagem para um número de telefone (cria a conversa se necessário)',
                 routing: {
                     request: {
                         method: 'POST',

@@ -9,7 +9,7 @@ const showOnlyForConversation = {
 };
 exports.conversationDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -18,10 +18,10 @@ exports.conversationDescription = [
         },
         options: [
             {
-                name: 'Get',
+                name: 'Buscar',
                 value: 'get',
-                action: 'Get a conversation',
-                description: 'Get a single conversation by ID',
+                action: 'Buscar uma conversa',
+                description: 'Buscar uma única conversa pelo ID',
                 routing: {
                     request: {
                         method: 'GET',
@@ -30,10 +30,10 @@ exports.conversationDescription = [
                 },
             },
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get many conversations',
-                description: 'Get a list of conversations',
+                action: 'Listar conversas',
+                description: 'Obter uma lista de conversas',
                 routing: {
                     request: {
                         method: 'GET',
@@ -42,10 +42,10 @@ exports.conversationDescription = [
                 },
             },
             {
-                name: 'Update',
+                name: 'Atualizar',
                 value: 'update',
-                action: 'Update a conversation',
-                description: 'Update status or assignment of a conversation',
+                action: 'Atualizar uma conversa',
+                description: 'Atualizar status ou atribuição de uma conversa',
                 routing: {
                     request: {
                         method: 'PUT',

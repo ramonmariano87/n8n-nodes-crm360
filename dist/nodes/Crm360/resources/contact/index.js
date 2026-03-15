@@ -13,7 +13,7 @@ const showOnlyForContact = {
 };
 exports.contactDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -22,10 +22,10 @@ exports.contactDescription = [
         },
         options: [
             {
-                name: 'Create',
+                name: 'Criar',
                 value: 'create',
-                action: 'Create a contact',
-                description: 'Create a new contact',
+                action: 'Criar um contato',
+                description: 'Criar um novo contato',
                 routing: {
                     request: {
                         method: 'POST',
@@ -34,10 +34,10 @@ exports.contactDescription = [
                 },
             },
             {
-                name: 'Delete',
+                name: 'Excluir',
                 value: 'delete',
-                action: 'Delete a contact',
-                description: 'Soft delete a contact',
+                action: 'Excluir um contato',
+                description: 'Excluir um contato (soft delete)',
                 routing: {
                     request: {
                         method: 'DELETE',
@@ -46,10 +46,10 @@ exports.contactDescription = [
                 },
             },
             {
-                name: 'Get',
+                name: 'Buscar',
                 value: 'get',
-                action: 'Get a contact',
-                description: 'Get a single contact by ID',
+                action: 'Buscar um contato',
+                description: 'Buscar um único contato pelo ID',
                 routing: {
                     request: {
                         method: 'GET',
@@ -58,10 +58,10 @@ exports.contactDescription = [
                 },
             },
             {
-                name: 'Get Conversations',
+                name: 'Buscar Conversas',
                 value: 'getConversations',
-                action: 'Get contact conversations',
-                description: 'Get chat conversations linked to a contact',
+                action: 'Buscar conversas do contato',
+                description: 'Buscar conversas de chat vinculadas a um contato',
                 routing: {
                     request: {
                         method: 'GET',
@@ -70,10 +70,10 @@ exports.contactDescription = [
                 },
             },
             {
-                name: 'Get Deals',
+                name: 'Buscar Negócios',
                 value: 'getDeals',
-                action: 'Get contact deals',
-                description: 'Get deals associated with a contact',
+                action: 'Buscar negócios do contato',
+                description: 'Buscar negócios associados a um contato',
                 routing: {
                     request: {
                         method: 'GET',
@@ -82,10 +82,10 @@ exports.contactDescription = [
                 },
             },
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get many contacts',
-                description: 'Get a list of contacts',
+                action: 'Listar contatos',
+                description: 'Obter uma lista de contatos',
                 routing: {
                     request: {
                         method: 'GET',
@@ -94,10 +94,10 @@ exports.contactDescription = [
                 },
             },
             {
-                name: 'Update',
+                name: 'Atualizar',
                 value: 'update',
-                action: 'Update a contact',
-                description: 'Update an existing contact',
+                action: 'Atualizar um contato',
+                description: 'Atualizar um contato existente',
                 routing: {
                     request: {
                         method: 'PUT',

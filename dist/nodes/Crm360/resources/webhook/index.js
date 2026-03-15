@@ -11,7 +11,7 @@ const showOnlyForWebhook = {
 };
 exports.webhookDescription = [
     {
-        displayName: 'Operation',
+        displayName: 'Operação',
         name: 'operation',
         type: 'options',
         noDataExpression: true,
@@ -20,10 +20,10 @@ exports.webhookDescription = [
         },
         options: [
             {
-                name: 'Create',
+                name: 'Criar',
                 value: 'create',
-                action: 'Create a webhook',
-                description: 'Create a new outbound webhook',
+                action: 'Criar um webhook',
+                description: 'Criar um novo webhook de saída',
                 routing: {
                     request: {
                         method: 'POST',
@@ -32,10 +32,10 @@ exports.webhookDescription = [
                 },
             },
             {
-                name: 'Delete',
+                name: 'Excluir',
                 value: 'delete',
-                action: 'Delete a webhook',
-                description: 'Delete a webhook',
+                action: 'Excluir um webhook',
+                description: 'Excluir um webhook',
                 routing: {
                     request: {
                         method: 'DELETE',
@@ -44,10 +44,10 @@ exports.webhookDescription = [
                 },
             },
             {
-                name: 'Get Many',
+                name: 'Listar',
                 value: 'getMany',
-                action: 'Get many webhooks',
-                description: 'Get all configured webhooks',
+                action: 'Listar webhooks',
+                description: 'Obter todos os webhooks configurados',
                 routing: {
                     request: {
                         method: 'GET',
@@ -56,10 +56,10 @@ exports.webhookDescription = [
                 },
             },
             {
-                name: 'Test',
+                name: 'Testar',
                 value: 'test',
-                action: 'Test a webhook',
-                description: 'Send a test event to a webhook',
+                action: 'Testar um webhook',
+                description: 'Enviar um evento de teste para um webhook',
                 routing: {
                     request: {
                         method: 'POST',
@@ -68,10 +68,10 @@ exports.webhookDescription = [
                 },
             },
             {
-                name: 'Update',
+                name: 'Atualizar',
                 value: 'update',
-                action: 'Update a webhook',
-                description: 'Update an existing webhook',
+                action: 'Atualizar um webhook',
+                description: 'Atualizar um webhook existente',
                 routing: {
                     request: {
                         method: 'PUT',
