@@ -1,0 +1,58 @@
+{
+    "name": "n8n-nodes-crm360",
+    "version": "1.0.0",
+    "description": "n8n community node for CRM 360 — manage contacts, conversations, messages and webhooks",
+    "license": "MIT",
+    "homepage": "https://contrate360.com",
+    "keywords": [
+        "n8n-community-node-package",
+        "n8n",
+        "crm",
+        "crm360",
+        "whatsapp",
+        "chat",
+        "contacts"
+    ],
+    "author": {
+        "name": "Contrate Solutions",
+        "email": "suporte@contratesolutions.com.br"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/contratesolutions/n8n-nodes-crm360.git"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "strict": true,
+        "credentials": [
+            "dist/credentials/Crm360Api.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/Crm360/Crm360.node.js",
+            "dist/nodes/Crm360/Crm360Trigger.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "*",
+        "@types/node": "^25.5.0",
+        "eslint": "9.32.0",
+        "prettier": "3.6.2",
+        "release-it": "^19.0.4",
+        "typescript": "5.9.2"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    }
+}
