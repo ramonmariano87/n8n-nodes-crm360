@@ -1,0 +1,143 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.appointmentCreateDescription = void 0;
+const show = {
+    operation: ['create'],
+    resource: ['appointment'],
+};
+exports.appointmentCreateDescription = [
+    {
+        displayName: 'Title',
+        name: 'title',
+        type: 'string',
+        required: true,
+        default: '',
+        displayOptions: { show },
+        description: 'The title of the appointment',
+        routing: { send: { type: 'body', property: 'title' } },
+    },
+    {
+        displayName: 'Start At',
+        name: 'startAt',
+        type: 'dateTime',
+        required: true,
+        default: '',
+        displayOptions: { show },
+        description: 'When the appointment starts',
+        routing: { send: { type: 'body', property: 'start_at' } },
+    },
+    {
+        displayName: 'Additional Fields',
+        name: 'additionalFields',
+        type: 'collection',
+        placeholder: 'Add Field',
+        displayOptions: { show },
+        default: {},
+        options: [
+            {
+                displayName: 'Description',
+                name: 'description',
+                type: 'string',
+                typeOptions: { rows: 3 },
+                default: '',
+                routing: { send: { type: 'body', property: 'description' } },
+            },
+            {
+                displayName: 'End At',
+                name: 'end_at',
+                type: 'dateTime',
+                default: '',
+                routing: { send: { type: 'body', property: 'end_at' } },
+            },
+            {
+                displayName: 'All Day',
+                name: 'all_day',
+                type: 'boolean',
+                default: false,
+                routing: { send: { type: 'body', property: 'all_day' } },
+            },
+            {
+                displayName: 'Location',
+                name: 'location',
+                type: 'string',
+                default: '',
+                routing: { send: { type: 'body', property: 'location' } },
+            },
+            {
+                displayName: 'Type',
+                name: 'type',
+                type: 'options',
+                options: [
+                    { name: 'Meeting', value: 'meeting' },
+                    { name: 'Call', value: 'call' },
+                    { name: 'Task', value: 'task' },
+                    { name: 'Event', value: 'event' },
+                    { name: 'Other', value: 'other' },
+                ],
+                default: 'meeting',
+                routing: { send: { type: 'body', property: 'type' } },
+            },
+            {
+                displayName: 'Meeting Type',
+                name: 'meeting_type',
+                type: 'options',
+                options: [
+                    { name: 'In Person', value: 'in_person' },
+                    { name: 'Online', value: 'online' },
+                ],
+                default: 'in_person',
+                routing: { send: { type: 'body', property: 'meeting_type' } },
+            },
+            {
+                displayName: 'Status',
+                name: 'status',
+                type: 'options',
+                options: [
+                    { name: 'Scheduled', value: 'scheduled' },
+                    { name: 'Confirmed', value: 'confirmed' },
+                ],
+                default: 'scheduled',
+                routing: { send: { type: 'body', property: 'status' } },
+            },
+            {
+                displayName: 'Color',
+                name: 'color',
+                type: 'string',
+                default: '#3B82F6',
+                description: 'Color hex code (e.g. #3B82F6)',
+                routing: { send: { type: 'body', property: 'color' } },
+            },
+            {
+                displayName: 'User ID',
+                name: 'user_id',
+                type: 'number',
+                default: 0,
+                description: 'Assigned user ID',
+                routing: { send: { type: 'body', property: 'user_id' } },
+            },
+            {
+                displayName: 'Contact ID',
+                name: 'contact_id',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'contact_id' } },
+            },
+            {
+                displayName: 'Deal ID',
+                name: 'deal_id',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'deal_id' } },
+            },
+            {
+                displayName: 'Notes',
+                name: 'notes',
+                type: 'string',
+                typeOptions: { rows: 3 },
+                default: '',
+                routing: { send: { type: 'body', property: 'notes' } },
+            },
+        ],
+    },
+];
+//# sourceMappingURL=create.js.map

@@ -3,6 +3,10 @@ import { contactDescription } from './resources/contact';
 import { conversationDescription } from './resources/conversation';
 import { messageDescription } from './resources/message';
 import { webhookDescription } from './resources/webhook';
+import { invoiceDescription } from './resources/invoice';
+import { proposalDescription } from './resources/proposal';
+import { appointmentDescription } from './resources/appointment';
+import { productDescription } from './resources/product';
 
 export class Crm360 implements INodeType {
 	description: INodeTypeDescription = {
@@ -52,6 +56,22 @@ export class Crm360 implements INodeType {
 						value: 'message',
 					},
 					{
+						name: 'Appointment',
+						value: 'appointment',
+					},
+					{
+						name: 'Invoice',
+						value: 'invoice',
+					},
+					{
+						name: 'Product',
+						value: 'product',
+					},
+					{
+						name: 'Proposal',
+						value: 'proposal',
+					},
+					{
 						name: 'Webhook',
 						value: 'webhook',
 					},
@@ -62,6 +82,10 @@ export class Crm360 implements INodeType {
 			...conversationDescription,
 			...messageDescription,
 			...webhookDescription,
+			...invoiceDescription,
+			...proposalDescription,
+			...appointmentDescription,
+			...productDescription,
 		],
 	};
 }

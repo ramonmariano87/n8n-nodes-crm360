@@ -6,6 +6,10 @@ const contact_1 = require("./resources/contact");
 const conversation_1 = require("./resources/conversation");
 const message_1 = require("./resources/message");
 const webhook_1 = require("./resources/webhook");
+const invoice_1 = require("./resources/invoice");
+const proposal_1 = require("./resources/proposal");
+const appointment_1 = require("./resources/appointment");
+const product_1 = require("./resources/product");
 class Crm360 {
     constructor() {
         this.description = {
@@ -55,6 +59,22 @@ class Crm360 {
                             value: 'message',
                         },
                         {
+                            name: 'Appointment',
+                            value: 'appointment',
+                        },
+                        {
+                            name: 'Invoice',
+                            value: 'invoice',
+                        },
+                        {
+                            name: 'Product',
+                            value: 'product',
+                        },
+                        {
+                            name: 'Proposal',
+                            value: 'proposal',
+                        },
+                        {
                             name: 'Webhook',
                             value: 'webhook',
                         },
@@ -65,6 +85,10 @@ class Crm360 {
                 ...conversation_1.conversationDescription,
                 ...message_1.messageDescription,
                 ...webhook_1.webhookDescription,
+                ...invoice_1.invoiceDescription,
+                ...proposal_1.proposalDescription,
+                ...appointment_1.appointmentDescription,
+                ...product_1.productDescription,
             ],
         };
     }

@@ -1,0 +1,132 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.proposalCreateDescription = void 0;
+const show = {
+    operation: ['create'],
+    resource: ['proposal'],
+};
+exports.proposalCreateDescription = [
+    {
+        displayName: 'Contact ID',
+        name: 'contactId',
+        type: 'number',
+        required: true,
+        default: 0,
+        displayOptions: { show },
+        description: 'The contact ID for this proposal',
+        routing: { send: { type: 'body', property: 'contact_id' } },
+    },
+    {
+        displayName: 'Items (JSON)',
+        name: 'items',
+        type: 'json',
+        required: true,
+        default: '[{"name": "Service", "quantity": 1, "unit_price": 500}]',
+        displayOptions: { show },
+        description: 'Array of proposal items: [{name, quantity, unit_price, description?, tax_rate?, is_optional?}]',
+        routing: { send: { type: 'body', property: 'items' } },
+    },
+    {
+        displayName: 'Additional Fields',
+        name: 'additionalFields',
+        type: 'collection',
+        placeholder: 'Add Field',
+        displayOptions: { show },
+        default: {},
+        options: [
+            {
+                displayName: 'Title',
+                name: 'title',
+                type: 'string',
+                default: '',
+                routing: { send: { type: 'body', property: 'title' } },
+            },
+            {
+                displayName: 'Subject',
+                name: 'subject',
+                type: 'string',
+                default: '',
+                routing: { send: { type: 'body', property: 'subject' } },
+            },
+            {
+                displayName: 'Deal ID',
+                name: 'deal_id',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'deal_id' } },
+            },
+            {
+                displayName: 'Assigned To (User ID)',
+                name: 'assigned_to',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'assigned_to' } },
+            },
+            {
+                displayName: 'Proposal Date',
+                name: 'proposal_date',
+                type: 'dateTime',
+                default: '',
+                routing: { send: { type: 'body', property: 'proposal_date' } },
+            },
+            {
+                displayName: 'Valid Until',
+                name: 'valid_until',
+                type: 'dateTime',
+                default: '',
+                routing: { send: { type: 'body', property: 'valid_until' } },
+            },
+            {
+                displayName: 'Currency',
+                name: 'currency',
+                type: 'string',
+                default: 'BRL',
+                routing: { send: { type: 'body', property: 'currency' } },
+            },
+            {
+                displayName: 'Discount Amount',
+                name: 'discount_amount',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'discount_amount' } },
+            },
+            {
+                displayName: 'Discount Type',
+                name: 'discount_type',
+                type: 'options',
+                options: [
+                    { name: 'Fixed', value: 'fixed' },
+                    { name: 'Percentage', value: 'percentage' },
+                ],
+                default: 'fixed',
+                routing: { send: { type: 'body', property: 'discount_type' } },
+            },
+            {
+                displayName: 'Content',
+                name: 'content',
+                type: 'string',
+                typeOptions: { rows: 5 },
+                default: '',
+                description: 'Proposal body content (HTML or Editor.js JSON)',
+                routing: { send: { type: 'body', property: 'content' } },
+            },
+            {
+                displayName: 'Notes',
+                name: 'notes',
+                type: 'string',
+                typeOptions: { rows: 3 },
+                default: '',
+                routing: { send: { type: 'body', property: 'notes' } },
+            },
+            {
+                displayName: 'Terms',
+                name: 'terms',
+                type: 'string',
+                typeOptions: { rows: 3 },
+                default: '',
+                routing: { send: { type: 'body', property: 'terms' } },
+            },
+        ],
+    },
+];
+//# sourceMappingURL=create.js.map

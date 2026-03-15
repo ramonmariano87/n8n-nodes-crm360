@@ -1,0 +1,128 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.appointmentUpdateDescription = void 0;
+const show = {
+    operation: ['update'],
+    resource: ['appointment'],
+};
+exports.appointmentUpdateDescription = [
+    {
+        displayName: 'Appointment ID',
+        name: 'appointmentId',
+        type: 'number',
+        required: true,
+        default: 0,
+        displayOptions: { show },
+        description: 'The ID of the appointment to update',
+    },
+    {
+        displayName: 'Update Fields',
+        name: 'updateFields',
+        type: 'collection',
+        placeholder: 'Add Field',
+        displayOptions: { show },
+        default: {},
+        options: [
+            {
+                displayName: 'Title',
+                name: 'title',
+                type: 'string',
+                default: '',
+                routing: { send: { type: 'body', property: 'title' } },
+            },
+            {
+                displayName: 'Description',
+                name: 'description',
+                type: 'string',
+                typeOptions: { rows: 3 },
+                default: '',
+                routing: { send: { type: 'body', property: 'description' } },
+            },
+            {
+                displayName: 'Start At',
+                name: 'start_at',
+                type: 'dateTime',
+                default: '',
+                routing: { send: { type: 'body', property: 'start_at' } },
+            },
+            {
+                displayName: 'End At',
+                name: 'end_at',
+                type: 'dateTime',
+                default: '',
+                routing: { send: { type: 'body', property: 'end_at' } },
+            },
+            {
+                displayName: 'Location',
+                name: 'location',
+                type: 'string',
+                default: '',
+                routing: { send: { type: 'body', property: 'location' } },
+            },
+            {
+                displayName: 'Type',
+                name: 'type',
+                type: 'options',
+                options: [
+                    { name: 'Meeting', value: 'meeting' },
+                    { name: 'Call', value: 'call' },
+                    { name: 'Task', value: 'task' },
+                    { name: 'Event', value: 'event' },
+                    { name: 'Other', value: 'other' },
+                ],
+                default: 'meeting',
+                routing: { send: { type: 'body', property: 'type' } },
+            },
+            {
+                displayName: 'Status',
+                name: 'status',
+                type: 'options',
+                options: [
+                    { name: 'Scheduled', value: 'scheduled' },
+                    { name: 'Confirmed', value: 'confirmed' },
+                    { name: 'Cancelled', value: 'cancelled' },
+                    { name: 'Completed', value: 'completed' },
+                ],
+                default: 'scheduled',
+                routing: { send: { type: 'body', property: 'status' } },
+            },
+            {
+                displayName: 'Color',
+                name: 'color',
+                type: 'string',
+                default: '#3B82F6',
+                routing: { send: { type: 'body', property: 'color' } },
+            },
+            {
+                displayName: 'User ID',
+                name: 'user_id',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'user_id' } },
+            },
+            {
+                displayName: 'Contact ID',
+                name: 'contact_id',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'contact_id' } },
+            },
+            {
+                displayName: 'Deal ID',
+                name: 'deal_id',
+                type: 'number',
+                default: 0,
+                routing: { send: { type: 'body', property: 'deal_id' } },
+            },
+            {
+                displayName: 'Notes',
+                name: 'notes',
+                type: 'string',
+                typeOptions: { rows: 3 },
+                default: '',
+                routing: { send: { type: 'body', property: 'notes' } },
+            },
+        ],
+    },
+];
+//# sourceMappingURL=update.js.map

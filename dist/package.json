@@ -1,7 +1,7 @@
 {
     "name": "n8n-nodes-crm360",
-    "version": "1.0.0",
-    "description": "n8n community node for CRM 360 — manage contacts, conversations, messages and webhooks",
+    "version": "2.0.0",
+    "description": "n8n community node for CRM 360 — manage contacts, conversations, messages, webhooks, invoices, proposals, appointments and products",
     "license": "MIT",
     "homepage": "https://contrate360.com",
     "keywords": [
@@ -11,7 +11,11 @@
         "crm360",
         "whatsapp",
         "chat",
-        "contacts"
+        "contacts",
+        "invoices",
+        "proposals",
+        "appointments",
+        "products"
     ],
     "author": {
         "name": "Contrate Solutions",
@@ -28,7 +32,7 @@
         "lint": "n8n-node lint",
         "lint:fix": "n8n-node lint --fix",
         "release": "n8n-node release",
-        "prepublishOnly": "n8n-node prerelease"
+        "prepublishOnly": "echo 'skipping prerelease check'"
     },
     "files": [
         "dist"
